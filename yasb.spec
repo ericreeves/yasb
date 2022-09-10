@@ -5,7 +5,8 @@ block_cipher = None
 
 
 a = Analysis(['src/main.py'],
-             datas=[('src/core', 'core')],
+             pathex=['../src'],
+#             datas=[('src/core', 'core')],
              binaries=[],
              hiddenimports=[],
              hookspath=[],
