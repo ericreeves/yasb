@@ -6,7 +6,7 @@ block_cipher = None
 
 a = Analysis(['src/main.py'],
              binaries=[],
-             datas=Tree('./src/core', prefix='core', excludes=['tmp','*.pyc'])
+             datas=Tree('./src/core', prefix='core')
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
