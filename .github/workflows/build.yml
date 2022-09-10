@@ -26,7 +26,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: dist/yasb.exe
-          asset_name: yasb
+          asset_name: yasb.exe
           tag: ${{ github.ref }}
           overwrite: true
           body: "Yasb All-in-One Binary"
