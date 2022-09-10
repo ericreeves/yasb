@@ -6,7 +6,7 @@ block_cipher = None
 
 a = Analysis(['src/main.py'],
              binaries=[],
-             datas=[ ('src\assets\favicon\favicon.ico', 'yasb.ico') ],
+             datas=[ ('.\src\assets\favicon\favicon.ico', '.\favicon.ico') ],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -31,4 +31,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=True , icon='yasb.ico')
+          console=True , icon='.\favicon.ico')
