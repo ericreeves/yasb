@@ -32,8 +32,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.event.head_commit.message }}
-          release_name: ${{ github.event.head_commit.message }}
+          tag_name: litex
+          release_name: litex
+          # tag_name: ${{ github.event.head_commit.message }}
+          # release_name: ${{ github.event.head_commit.message }}
           overwrite: true
           body: |
             Test Release v1.0.0
