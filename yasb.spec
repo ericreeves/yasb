@@ -6,7 +6,7 @@ block_cipher = None
 
 a = Analysis(['src/main.py'],
              binaries=[],
-             datas=Tree('./src/core', prefix='core')
+             datas=[],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -18,6 +18,7 @@ a = Analysis(['src/main.py'],
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
+          Tree('./src/core', prefix='core'),
           a.scripts,
           a.binaries,
           a.zipfiles,
