@@ -6,7 +6,7 @@ block_cipher = None
 
 a = Analysis(['src/main.py'],
              binaries=[],
-             datas=[],
+             datas=Tree('./src/core', prefix='core', excludes=['tmp','*.pyc'])
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -30,4 +30,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=True)
+          console=True , icon='src\assets\favicon\favicon.ico')
